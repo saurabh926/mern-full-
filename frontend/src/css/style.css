@@ -1,0 +1,1231 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#wrapper
+{
+  width: 100%;
+}
+#topmenu
+{
+width: 100%;
+height: 20px;
+display: flex;
+justify-content: space-around;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: grey;
+
+}
+#header
+{
+position: sticky;
+top: 0px;
+background-color: white;
+}
+
+#topmenuleft
+{
+  width: 30%;
+}
+#topmenuright
+{
+  width: 30%;
+}
+
+#topmenuleft ul 
+{
+  list-style: none;
+  display: flex
+}
+
+#topmenuleft ul li 
+{
+margin-left: 20px;
+}    
+
+#topmenuright ul 
+{
+  list-style: none;
+  display: flex
+}
+
+#topmenuright ul 
+{
+  list-style: none;
+  display: flex
+}
+
+#topmenuright ul li 
+{
+margin-left: 20px;
+}    
+
+#mainmenu
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  border-top: 1px solid rgb(197, 191, 191);
+  padding: 10px;
+}
+
+#mainmenumiddle 
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: bold;
+}
+
+
+
+#mainmenumiddle ul 
+{
+  display: flex;
+  list-style: none;
+}
+
+#mainmenumiddle ul  li
+{
+margin: 20px;
+}
+
+#mainmenuicon 
+{
+  margin: 20px;
+}
+
+#userspace
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#featureProduct
+{
+padding-top: 20px;
+text-align: center;
+}
+
+h1 
+{
+font-family: Arial, Helvetica, sans-serif;
+color: #B4B4B8;
+}
+#pro1
+{
+color: grey;
+font-family: cursive;
+}
+#fetaureProList
+{
+padding-top: 20px;
+width: 80%;
+margin: auto;
+ display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+
+}
+
+
+.button {
+position: relative;
+padding: 10px 22px;
+border-radius: 6px;
+border: none;
+color: #fff;
+cursor: pointer;
+background-color: #7d2ae8;
+transition: all 0.2s ease;
+}
+
+.button:active {
+transform: scale(0.96);
+}
+
+.button:before,
+.button:after {
+position: absolute;
+content: "";
+width: 150%;
+left: 50%;
+height: 100%;
+transform: translateX(-50%);
+z-index: -1000;
+background-repeat: no-repeat;
+}
+
+.button:hover:before {
+top: -70%;
+background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+  10% 10%, 18% 18%;
+background-position: 50% 120%;
+animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+0% {
+  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+    40% 90%, 55% 90%, 70% 90%;
+}
+
+50% {
+  background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+    50% 50%, 65% 20%, 90% 30%;
+}
+
+100% {
+  background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+    50% 40%, 65% 10%, 90% 20%;
+  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+
+.button:hover::after {
+bottom: -70%;
+background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+  radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+background-position: 50% 0%;
+animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+0% {
+  background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+    70% -10%, 70% 0%;
+}
+
+50% {
+  background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+    105% 0%;
+}
+
+100% {
+  background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+    110% 10%;
+  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+
+
+
+.site-footer
+{
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links
+{
+padding-left:0;
+list-style:none
+}
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links.inline li
+{
+display:inline-block
+}
+.site-footer .social-icons
+{
+text-align:right
+}
+.site-footer .social-icons a
+{
+width:40px;
+height:40px;
+line-height:40px;
+margin-left:6px;
+margin-right:0;
+border-radius:100%;
+background-color:#33353d
+}
+.copyright-text
+{
+margin:0
+}
+@media (max-width:991px)
+{
+.site-footer [class^=col-]
+{
+  margin-bottom:30px
+}
+}
+@media (max-width:767px)
+{
+.site-footer
+{
+  padding-bottom:0
+}
+.site-footer .copyright-text,.site-footer .social-icons
+{
+  text-align:center
+}
+}
+.social-icons
+{
+padding-left:0;
+margin-bottom:0;
+list-style:none
+}
+.social-icons li
+{
+display:inline-block;
+margin-bottom:4px
+}
+.social-icons li.title
+{
+margin-right:15px;
+text-transform:uppercase;
+color:#96a2b2;
+font-weight:700;
+font-size:13px
+}
+.social-icons a{
+background-color:#eceeef;
+color:#818a91;
+font-size:16px;
+display:inline-block;
+line-height:44px;
+width:44px;
+height:44px;
+text-align:center;
+margin-right:8px;
+border-radius:100%;
+-webkit-transition:all .2s linear;
+-o-transition:all .2s linear;
+transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+color:#fff;
+background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+line-height:34px;
+height:34px;
+width:34px;
+font-size:14px
+}
+.social-icons a.facebook:hover
+{
+background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+.social-icons li.title
+{
+  display:block;
+  margin-right:0;
+  font-weight:600
+}
+}
+
+
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+}
+
+
+#AdminDashboard
+{
+width: 100%;
+display: flex;
+justify-content: space-between;
+background-color: #00aced;
+padding: 20px;
+height: 80px;
+}
+
+#admindata
+{
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding-top: 10px;
+}
+
+#adminleftmenu
+{
+width: 15%;
+background-color: black;
+height: 100vh;
+color: white;
+display: flex;
+flex-direction: column;
+}
+#adminrightdata
+{
+width: 80%;
+}
+
+.adminmenu
+{
+color: white;
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+font-size: 12px;
+padding: 20px;
+}
+
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.cartCount
+{
+padding: 5px;
+border-radius: 50%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+height: 10px;
+width: 10px;
+font-weight: bold;
+color: white;
+background-color: rgb(58, 210, 34);
+margin-left: 5px;
+}
+
+#customers {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+
+#userdata
+{
+text-align: right;
+padding: 4px;
+color: blueviolet;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Add keyframe animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes buttonHover {
+  from {
+      background-color: #4CAF50;
+  }
+  to {
+      background-color: #45a049;
+  }
+}
+
+@keyframes cancelHover {
+  from {
+      background-color: #f44336;
+  }
+  to {
+      background-color: #e53935;
+  }
+}
+
+/* Container styles */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.container input[type="text"], .container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container button[type="submit"], .cancelbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+
+.container button[type="submit"]:hover {
+  animation: buttonHover 0.3s forwards;
+}
+
+.cancelbtn:hover {
+  animation: cancelHover 0.3s forwards;
+}
+
+.container label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.container.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.psw {
+  text-align: right;
+}
+/* Add keyframe animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes buttonHover {
+  from {
+      background-color: #4CAF50;
+  }
+  to {
+      background-color: #45a049;
+  }
+}
+
+@keyframes inputFocus {
+  from {
+      border-color: #ccc;
+  }
+  to {
+      border-color: #4CAF50;
+  }
+}
+
+.login-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-container h1 {
+  text-align: center;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #4CAF50;
+  animation: inputFocus 0.3s forwards;
+}
+
+.login-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.login-container button[type="submit"]:active {
+  transform: scale(1);
+}
+
+.additional-links {
+  text-align: center;
+}
+
+.additional-links a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.additional-links a:hover {
+  color: #45a049;
+}
+
+/* Add keyframe animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes iconHover {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.2);
+  }
+}
+
+@keyframes buttonHover {
+  from {
+      background-color: #4CAF50;
+  }
+  to {
+      background-color: #45a049;
+  }
+}
+
+@keyframes boxShadow {
+  from {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  to {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+#wrapper {
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#topmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#topmenuleft ul,
+#topmenuright ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+#topmenuleft li,
+#topmenuright li {
+  display: inline;
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+#topmenuleft li:hover,
+#topmenuright li:hover {
+  color: #4CAF50;
+  cursor: pointer;
+  animation: boxShadow 0.3s forwards;
+}
+
+#topmenuright li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#topmenuright li a:hover {
+  color: #4CAF50;
+  animation: boxShadow 0.3s forwards;
+}
+
+#userdata {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#userdata a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+#userdata a:hover {
+  text-decoration: underline;
+  animation: boxShadow 0.3s forwards;
+}
+
+#mainmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#mainmenulogo img {
+  height: 50px;
+  width: auto;
+}
+
+#mainmenumiddle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+#mainmenumiddle li {
+  display: inline;
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+#mainmenumiddle li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+#mainmenumiddle li a:hover {
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 4px;
+  animation: boxShadow 0.3s forwards;
+}
+
+#mainmenuicon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#mainmenuicon a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#mainmenuicon a:hover {
+  transform: scale(1.2);
+  animation: boxShadow 0.3s forwards;
+}
+
+#mainmenuicon .cartCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+#mainmenuicon #userspace {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 0%;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mySwiper img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background: #4CAF50;
+  opacity: 1;
+  transition: background 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4CAF50;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #45a049;
+}
+/* Styles for the checkout container */
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Styles for the form and its elements */
+form {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Styles for the pay button */
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for headings */
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles for net payable amount */
+.net-payable {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Styles for the checkout container */
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Styles for the form and its elements */
+form {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Styles for the pay button */
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Styles for headings */
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles for net payable amount */
+.net-payable {
+  font-size: 20px;
+  font-weight: bold;
+}

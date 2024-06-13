@@ -1,0 +1,545 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #ffffff; /* White background */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #555; /* Darker text color on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      width: 100%;
+      padding: 10px 0;
+      display: none;
+    }
+  
+    .nav-item {
+      margin: 0;
+      padding: 10px 20px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      color: #333;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+  /* Layout.css */
+  .navbar {
+    background-color: #ffffff; /* White background */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #555; /* Darker text color on hover */
+  }
+  
+  .navbar-search {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+  }
+  
+  /* Layout.css */
+  .navbar {
+    background-color: #ffffff; /* White background */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #555; /* Darker text color on hover */
+  }
+  
+  .navbar-search {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  }
+  
+  .search-button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+  }
+  
+  
+  #wrapper {
+    width: 100%;
+  }
+  
+  #header {
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+  
+  #topmenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  #topmenuleft ul, #topmenuright ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-nav.open {
+    display: block;
+  }
+  
+  .nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 5px 10px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .navbar-nav.open {
+        display: flex;
+    }
+  
+    .navbar-toggle {
+        display: block;
+    }
+  }
+  
+  /* Center the form container */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the form */
+  form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the avatar image inside the form */
+  .imgcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the avatar image */
+  .avatar {
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+  /* Container for inputs and labels */
+  .container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the login button */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Style the cancel button */
+  button.cancelbtn {
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Remember me checkbox */
+  input[type="checkbox"] {
+    margin-top: 10px;
+  }
+  
+  /* Flex container for cancel button and forgot password link */
+  .container.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the forgot password link */
+  .psw {
+    margin-left: 8px;
+  }
+  /* Center the form container */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  /* Animation for the form */
+  @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Style the form */
+  form {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    background-color: #fff;
+    animation: slideIn 0.5s ease-in-out; /* Apply the animation */
+  }
+  
+  /* Center the avatar image inside the form */
+  .imgcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the avatar image */
+  .avatar {
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+  /* Container for inputs and labels */
+  .container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the login button */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Style the cancel button */
+  button.cancelbtn {
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Remember me checkbox */
+  input[type="checkbox"] {
+    margin-top: 10px;
+  }
+  
+  /* Flex container for cancel button and forgot password link */
+  .container.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the forgot password link */
+  .psw {
+    margin-left: 8px;
+  } 
+  // import React, { useState } from 'react';
+// import { Link, Outlet } from "react-router-dom";
+// import { FaFacebook, FaInstagramSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+// import { RiAdminFill } from "react-icons/ri";
+// import b1 from "./images/logo.png";
+
+// const Layout = () => {
+//     const [menuOpen, setMenuOpen] = useState(false);
+
+//     const toggleMenu = () => {
+//         setMenuOpen(!menuOpen);
+//     };
+
+//     return (
+//         <>
+//             <div id="wrapper">
+//                 <div id="header">      
+//                     {/* Top Menu */}
+//                     <div id="topmenu">
+//                         <div id="topmenuleft">
+//                             <ul>
+//                                 <li><Link to="/about">About us</Link></li>
+//                                 <li><Link to="/privacy">Privacy</Link></li>
+//                                 <li><Link to="/faq">FAQ</Link></li>
+//                                 <li><Link to="/career">Career</Link></li>
+//                             </ul>
+//                         </div>
+//                         <div id="topmenuright">  
+//                             <ul>
+//                                 <li><Link to="/wishlist">My Wishlist</Link></li>
+//                                 <li><Link to="/track-order">Track Your Order</Link></li>
+//                                 <li><FaFacebook /></li>
+//                                 <li><FaInstagramSquare /></li> 
+//                                 <li><FaTwitter /></li>
+//                                 <li><FaLinkedin /></li>
+//                                 <li><FaYoutube /></li>
+//                                 <li><Link to="/adminuser"><RiAdminFill /></Link></li>
+//                             </ul>
+//                         </div>
+//                     </div>
+
+//                     <nav className="navbar">
+//                         <Link to="/" className="navbar-brand">Logo</Link>
+//                         <ul className={menuOpen ? "navbar-nav open" : "navbar-nav"} id="menu">
+//                             <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
+//                             <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
+//                             <li className="nav-item"><Link to="/services" className="nav-link">Services</Link></li>
+//                             <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
+//                         </ul>
+
+//                         <img src={b1}/>
+                        
+//                         <div className="navbar-search">
+//                             <input type="text" placeholder="Search..." className="search-input" />
+//                             <button className="search-button">Search</button>
+//                         </div>
+//                         <div className="navbar-toggle" onClick={toggleMenu}>☰</div>
+//                     </nav>
+//                 </div>
+//             </div>
+          
+//             <Outlet />
+//         </>
+//     );
+// };
+
+// export default Layout;
